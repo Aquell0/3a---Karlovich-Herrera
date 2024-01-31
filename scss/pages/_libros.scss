@@ -1,0 +1,29 @@
+.libros{
+    section{
+       padding: $espaciado;
+       .card1{
+         @extend %flex-center;
+         border: 1px solid black;
+         background-color: white;
+          width: 50%;
+          p{
+            color: map-get($map: $colores, $key: textos-primario);
+          };
+          img{
+             width: 100%;
+          }
+       }
+       .descripcion{
+          margin-left: 20px;
+          button{
+             background-color:map-get($map: $colores, $key: botones);
+             border: 1px solid black;
+             padding: 10px 30px;
+             margin-top: 20px;
+             border-radius: 5px;
+             box-shadow: 0 0 10px grey;
+             font-weight: 500;
+          }
+       }
+    }
+ }
